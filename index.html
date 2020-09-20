@@ -14,6 +14,15 @@
   </style>
 </head>
 <body>
-  <div class="box"></div>
+  <div class="box" id="target"></div>
+
+  <script>
+    'use strict';
+
+    document.getElementById('target').addEventListener('dblclick', () => {
+      document.getElementById('target').style.background = 'pink';
+      document.getElementById('target').style.borderRadius = '50%'
+    });
+  </script>
 </body>
 </html>
